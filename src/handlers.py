@@ -18,8 +18,7 @@ router = Router(name=__name__)
 
 @router.message(CommandStart())
 async def start_handler(message: Message):
-    start_message = f"Привет, *{
-        message.from_user.full_name}*\nДанный бот сделан как курсовая работа\n\
+    start_message = f"Привет, *{message.from_user.full_name}*\nДанный бот сделан как курсовая работа\n\
 Я думаю тебе стоит попробовать мой функционал :)"
     await message.answer(start_message, reply_markup=await start_kb())
 

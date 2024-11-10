@@ -12,5 +12,5 @@ DB_CONFIG = {
     "user": f"{os.getenv('DB_USER')}",
     "password": f"{os.getenv('DB_PASSWORD')}",
     "database": f"{os.getenv('DB')}",
-    "host": "localhost",
+    "host": f"{os.getenv('DB_HOST')}",
 }
